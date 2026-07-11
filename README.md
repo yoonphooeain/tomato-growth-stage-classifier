@@ -41,6 +41,11 @@ python app.py
 
 Open [http://127.0.0.1:5001](http://127.0.0.1:5001).
 
+Public presentation site: https://yoonphooeain.github.io/tomato-growth-stage-classifier/
+
+The GitHub Pages version presents the thesis interface and recorded results. Live
+prediction and dynamically generated reports require the local Flask application.
+
 The repository includes three demo images, so prediction and the main website work without downloading the full private research dataset.
 
 ## Full Dataset
