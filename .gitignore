@@ -1,0 +1,13 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.py[cod]
+node_modules/
+qlpreview/
+tmp_ppt_media/
+tmp_review/
+tmp_review_pptx.mjs
+data/
+*.pptx
+outputs/.DS_Store

@@ -1,0 +1,63 @@
+{
+  "device": "mps",
+  "class_names": [
+    "early_vegetative",
+    "flowering_initiation"
+  ],
+  "epochs": 5,
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.4384347944971054,
+      "train_accuracy": 0.7903225806451613,
+      "val_loss": 0.1586770837876334,
+      "val_accuracy": 0.9402985074626866
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.30897201506360883,
+      "train_accuracy": 0.8709677419354839,
+      "val_loss": 0.11037189713609752,
+      "val_accuracy": 0.9701492537313433
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.20603251337043701,
+      "train_accuracy": 0.9096774193548387,
+      "val_loss": 1.218856604644723,
+      "val_accuracy": 0.6268656716417911
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.23733422609586868,
+      "train_accuracy": 0.9129032258064517,
+      "val_loss": 0.15535443509692576,
+      "val_accuracy": 0.9552238805970149
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.18731682709147854,
+      "train_accuracy": 0.9258064516129032,
+      "val_loss": 0.05749522105081758,
+      "val_accuracy": 0.9850746268656716
+    }
+  ],
+  "test_metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": [
+      [
+        35,
+        0
+      ],
+      [
+        0,
+        30
+      ]
+    ]
+  }
+}

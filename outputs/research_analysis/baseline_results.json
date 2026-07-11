@@ -1,0 +1,297 @@
+{
+  "device": "mps",
+  "class_names": [
+    "early_vegetative",
+    "flowering_initiation"
+  ],
+  "dataset_summary": {
+    "train": 310,
+    "val": 67,
+    "test": 65
+  },
+  "models": {
+    "cnn": {
+      "display_name": "CNN",
+      "accuracy": 0.9846153846153847,
+      "precision": 1,
+      "recall": 0.9666666666666667,
+      "f1_score": 0.9830508474576272,
+      "confusion_matrix": [
+        [
+          35,
+          0
+        ],
+        [
+          1,
+          29
+        ]
+      ],
+      "best_val_accuracy": 0.9701492537313433,
+      "misclassified_samples": [
+        {
+          "path": null,
+          "filename": "1710490230834.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 66.97
+        }
+      ],
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.3913384655790944,
+          "train_accuracy": 0.8387096774193549,
+          "val_loss": 0.16345146786310336,
+          "val_accuracy": 0.9701492537313433
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.23755127513600935,
+          "train_accuracy": 0.9193548387096774,
+          "val_loss": 0.2569014515533154,
+          "val_accuracy": 0.8955223880597015
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.2444107260915541,
+          "train_accuracy": 0.9258064516129032,
+          "val_loss": 0.08544643276106956,
+          "val_accuracy": 0.9701492537313433
+        }
+      ],
+      "per_class": {
+        "early_vegetative": {
+          "precision": 0.9722,
+          "recall": 1,
+          "f1_score": 0.9859
+        },
+        "flowering_initiation": {
+          "precision": 1,
+          "recall": 0.9667,
+          "f1_score": 0.9831
+        }
+      }
+    },
+    "transformer": {
+      "display_name": "Transformer",
+      "accuracy": 0.7692307692307693,
+      "precision": 0.9411764705882353,
+      "recall": 0.5333333333333333,
+      "f1_score": 0.6808510638297872,
+      "confusion_matrix": [
+        [
+          34,
+          1
+        ],
+        [
+          14,
+          16
+        ]
+      ],
+      "best_val_accuracy": 0.7313432835820896,
+      "misclassified_samples": [
+        {
+          "path": null,
+          "filename": "photo_2024-02-15_16-55-04.jpg",
+          "true_label": "Early Vegetative",
+          "predicted_label": "Flowering Initiation",
+          "confidence": 50.19
+        },
+        {
+          "path": null,
+          "filename": "1710490230364.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 84.29
+        },
+        {
+          "path": null,
+          "filename": "1710490230381.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 85.35
+        },
+        {
+          "path": null,
+          "filename": "1710490230449.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 70.44
+        },
+        {
+          "path": null,
+          "filename": "1710490230506.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 77.44
+        },
+        {
+          "path": null,
+          "filename": "1710490230606.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 75.16
+        },
+        {
+          "path": null,
+          "filename": "1710490230642.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 86.37
+        },
+        {
+          "path": null,
+          "filename": "1710490230691.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 61.46
+        },
+        {
+          "path": null,
+          "filename": "1710490230834.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 87.75
+        },
+        {
+          "path": null,
+          "filename": "1710490230859.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 83.21
+        },
+        {
+          "path": null,
+          "filename": "1710490230937.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 75
+        },
+        {
+          "path": null,
+          "filename": "1710490230943.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 85.12
+        },
+        {
+          "path": null,
+          "filename": "1710490230949.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 51.33
+        },
+        {
+          "path": null,
+          "filename": "1710490230971.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 80.83
+        },
+        {
+          "path": null,
+          "filename": "1710490230987.jpg",
+          "true_label": "Flowering Initiation",
+          "predicted_label": "Early Vegetative",
+          "confidence": 80.35
+        }
+      ],
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.5496309399604797,
+          "train_accuracy": 0.7161290322580646,
+          "val_loss": 0.49211913836536125,
+          "val_accuracy": 0.7313432835820896
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.4642185041981359,
+          "train_accuracy": 0.7548387096774194,
+          "val_loss": 0.6741175011022768,
+          "val_accuracy": 0.7014925373134329
+        }
+      ],
+      "per_class": {
+        "early_vegetative": {
+          "precision": 0.7083,
+          "recall": 0.9714,
+          "f1_score": 0.8193
+        },
+        "flowering_initiation": {
+          "precision": 0.9412,
+          "recall": 0.5333,
+          "f1_score": 0.6809
+        }
+      }
+    },
+    "hybrid": {
+      "display_name": "Hybrid CNN-Transformer",
+      "accuracy": 1,
+      "precision": 1,
+      "recall": 1,
+      "f1_score": 1,
+      "confusion_matrix": [
+        [
+          35,
+          0
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "best_val_accuracy": 0.9850746268656716,
+      "misclassified_samples": [],
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.4384347944971054,
+          "train_accuracy": 0.7903225806451613,
+          "val_loss": 0.1586770837876334,
+          "val_accuracy": 0.9402985074626866
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.30897201506360883,
+          "train_accuracy": 0.8709677419354839,
+          "val_loss": 0.11037189713609752,
+          "val_accuracy": 0.9701492537313433
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.20603251337043701,
+          "train_accuracy": 0.9096774193548387,
+          "val_loss": 1.218856604644723,
+          "val_accuracy": 0.6268656716417911
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.23733422609586868,
+          "train_accuracy": 0.9129032258064517,
+          "val_loss": 0.15535443509692576,
+          "val_accuracy": 0.9552238805970149
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.18731682709147854,
+          "train_accuracy": 0.9258064516129032,
+          "val_loss": 0.05749522105081758,
+          "val_accuracy": 0.9850746268656716
+        }
+      ],
+      "per_class": {
+        "early_vegetative": {
+          "precision": 1,
+          "recall": 1,
+          "f1_score": 1
+        },
+        "flowering_initiation": {
+          "precision": 1,
+          "recall": 1,
+          "f1_score": 1
+        }
+      }
+    }
+  }
+}
