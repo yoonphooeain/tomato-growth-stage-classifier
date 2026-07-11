@@ -31,7 +31,7 @@ def add_static_notice(html: str, route: str) -> str:
         "GitHub Pages presentation mode: live prediction and generated downloads "
         "require the local Flask application described in the README.</div>"
     )
-    html = html.replace("<main", notice + "<main", 1)
+    html = html.replace('<section class="page-banner', notice + '<section class="page-banner', 1)
     html = html.replace("<form method=\"post\"", '<form method="post" onsubmit="return false;"')
     html = html.replace("<form method=\"get\"", '<form method="get" onsubmit="return false;"')
     return re.sub(
