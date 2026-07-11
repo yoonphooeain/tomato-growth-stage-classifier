@@ -1813,13 +1813,13 @@
       </div>
     </div>
 
-    
+
       <section class="page-banner reveal">
         <span>Tomato Thesis Research Portal</span>
         <h1>Live Growth Stage Predictor</h1>
         <p>Upload a tomato plant image to obtain its predicted stage, confidence level, uncertainty measurements, and explainable AI heatmap.</p>
       </section>
-    
+
 
     <section class="hero reveal slide-section" data-page="home" data-slide-title="Home">
       <div>
@@ -1888,29 +1888,29 @@
       <h2>Two Early Tomato Growth Stages</h2>
       <p class="muted">The study focuses on two visually similar stages. These test-set examples show the subtle developmental differences the model learns to recognize.</p>
       <div class="stage-preview-grid">
-        
+
           <article class="stage-preview-card">
             <img loading="lazy" src="/tomato-growth-stage-classifier/dataset-image/test/early_vegetative/1709272861381.jpg" alt="Early Vegetative tomato plant">
             <div class="stage-preview-overlay">
               <span>Stage 1</span>
               <h3>Early Vegetative</h3>
-              
+
                 <p>Active leaf development and vegetative growth without clearly visible flowering structures.</p>
-              
+
             </div>
           </article>
-        
+
           <article class="stage-preview-card">
             <img loading="lazy" src="/tomato-growth-stage-classifier/dataset-image/test/flowering_initiation/1710594999059.jpg" alt="Flowering Initiation tomato plant">
             <div class="stage-preview-overlay">
               <span>Stage 2</span>
               <h3>Flowering Initiation</h3>
-              
+
                 <p>The early transition toward flowering, with visual cues linked to reproductive development.</p>
-              
+
             </div>
           </article>
-        
+
       </div>
     </section>
 
@@ -1937,17 +1937,17 @@
         </div>
         <p class="muted" style="margin-top:14px;">The dataset focuses on two visually similar early tomato stages, making the classification task meaningful for agricultural AI research.</p>
         <div class="class-grid">
-          
+
             <div class="class-card">
               <strong>Early Vegetative</strong>
               <div class="muted">This stage is characterized by active leaf development, stronger vegetative growth, and the absence of visible flowering structures.</div>
             </div>
-          
+
             <div class="class-card">
               <strong>Flowering Initiation</strong>
               <div class="muted">This stage marks the early transition toward flowering, where the plant begins to show visual cues related to reproductive development.</div>
             </div>
-          
+
         </div>
       </section>
     </div>
@@ -1995,28 +1995,28 @@
             </tr>
           </thead>
           <tbody>
-            
+
               <tr>
                 <td><strong>CNN</strong></td>
                 <td>Strong local feature extraction</td>
                 <td>Weaker global contextual modeling</td>
                 <td>Baseline for local pattern learning</td>
               </tr>
-            
+
               <tr>
                 <td><strong>Transformer</strong></td>
                 <td>Strong global contextual learning</td>
                 <td>Can miss fine local visual details</td>
                 <td>Baseline for global relationship modeling</td>
               </tr>
-            
+
               <tr>
                 <td><strong>Hybrid CNN-Transformer</strong></td>
                 <td>Combines local and global feature learning</td>
                 <td>More complex than single-model baselines</td>
                 <td>Proposed model for balanced feature representation</td>
               </tr>
-            
+
           </tbody>
         </table>
       </section>
@@ -2025,47 +2025,47 @@
         <span class="eyebrow">Experiment Summary</span>
         <h2>Training and Testing Setup</h2>
         <div class="summary-grid">
-          
+
             <div class="summary-item">
               <span>Dataset split</span>
               <strong>Train / Validation / Test</strong>
             </div>
-          
+
             <div class="summary-item">
               <span>Image size</span>
               <strong>224 x 224</strong>
             </div>
-          
+
             <div class="summary-item">
               <span>Batch size</span>
               <strong>8</strong>
             </div>
-          
+
             <div class="summary-item">
               <span>Epochs</span>
               <strong>5</strong>
             </div>
-          
+
             <div class="summary-item">
               <span>Learning rate</span>
               <strong>0.001</strong>
             </div>
-          
+
             <div class="summary-item">
               <span>Loss function</span>
               <strong>Cross-Entropy Loss</strong>
             </div>
-          
+
             <div class="summary-item">
               <span>Optimizer</span>
               <strong>Adam</strong>
             </div>
-          
+
             <div class="summary-item">
               <span>Evaluation</span>
               <strong>Accuracy, Precision, Recall, F1-score, Confusion Matrix</strong>
             </div>
-          
+
         </div>
       </section>
     </div>
@@ -2133,7 +2133,7 @@
             </tr>
           </thead>
           <tbody>
-            
+
               <tr>
                 <td><strong>CNN</strong></td>
                 <td>3 convolution blocks</td>
@@ -2143,7 +2143,7 @@
                 <td><strong>98.46%</strong></td>
                 <td>98.31%</td>
               </tr>
-            
+
               <tr>
                 <td><strong>Transformer</strong></td>
                 <td>2 encoder layers</td>
@@ -2153,7 +2153,7 @@
                 <td><strong>76.92%</strong></td>
                 <td>68.09%</td>
               </tr>
-            
+
               <tr class="proposed-row">
                 <td><strong>Hybrid CNN-Transformer</strong><span class="model-chip">Proposed</span></td>
                 <td>CNN + Transformer fusion</td>
@@ -2163,7 +2163,7 @@
                 <td><strong>100.00%</strong></td>
                 <td>100.00%</td>
               </tr>
-            
+
           </tbody>
         </table>
       </div>
@@ -2192,7 +2192,7 @@
             </tr>
           </thead>
           <tbody>
-            
+
               <tr>
                 <td><strong>CNN branch only</strong></td>
                 <td>Local shape, texture, and edge features</td>
@@ -2201,7 +2201,7 @@
                 <td>98.31%</td>
                 <td>-1.54 pp</td>
               </tr>
-            
+
               <tr>
                 <td><strong>Transformer branch only</strong></td>
                 <td>Global relationships between image patches</td>
@@ -2210,7 +2210,7 @@
                 <td>68.09%</td>
                 <td>-23.08 pp</td>
               </tr>
-            
+
               <tr class="proposed-row">
                 <td><strong>CNN + Transformer</strong><span class="model-chip">Full Model</span></td>
                 <td>Fused local and global representations</td>
@@ -2219,7 +2219,7 @@
                 <td>100.00%</td>
                 <td>Reference</td>
               </tr>
-            
+
           </tbody>
         </table>
       </div>
@@ -2248,55 +2248,55 @@
       <h2>Hybrid Model Details</h2>
       <p class="muted">These values are read or calculated from the loaded checkpoint and current runtime, making the implementation easier to explain and reproduce.</p>
       <div class="details-grid">
-        
+
           <div class="detail-card">
             <span>Compute Device</span>
             <strong>MPS</strong>
             <small>Runtime inference device</small>
           </div>
-        
+
           <div class="detail-card">
             <span>Trainable Parameters</span>
             <strong>532,354</strong>
             <small>Hybrid model complexity</small>
           </div>
-        
+
           <div class="detail-card">
             <span>Checkpoint Size</span>
             <strong>2.05 MB</strong>
             <small>Saved model file</small>
           </div>
-        
+
           <div class="detail-card">
             <span>Mean Inference Time</span>
-            <strong>6.1 ms</strong>
+            <strong>5.9 ms</strong>
             <small>Batch size 1, five timed runs</small>
           </div>
-        
+
           <div class="detail-card">
             <span>Input Tensor</span>
             <strong>3 x 224 x 224</strong>
             <small>RGB normalized image</small>
           </div>
-        
+
           <div class="detail-card">
             <span>Transformer Tokens</span>
             <strong>196 + CLS</strong>
             <small>14 x 14 image patches</small>
           </div>
-        
+
           <div class="detail-card">
             <span>Fusion Vector</span>
             <strong>256-D</strong>
             <small>128 CNN + 128 Transformer</small>
           </div>
-        
+
           <div class="detail-card">
             <span>Output Classes</span>
             <strong>2</strong>
             <small>Early Vegetative / Flowering Initiation</small>
           </div>
-        
+
       </div>
       <div class="slideshow-tip">Inference time is a runtime estimate and can vary with hardware load. Parameter count and checkpoint size remain fixed for this trained model.</div>
     </section>
@@ -2314,7 +2314,7 @@
         <div class="slide-badge">Split Summary</div>
         <h2>Train, Validation, and Test Balance</h2>
         <div class="dataset-legend">
-          
+
             <div class="dataset-legend-item">
               <div class="dataset-legend-label">
                 <span class="dataset-dot" style="background: #0f6c78;"></span>
@@ -2322,7 +2322,7 @@
               </div>
               <strong>310 images</strong>
             </div>
-          
+
             <div class="dataset-legend-item">
               <div class="dataset-legend-label">
                 <span class="dataset-dot" style="background: #d96d3a;"></span>
@@ -2330,7 +2330,7 @@
               </div>
               <strong>67 images</strong>
             </div>
-          
+
             <div class="dataset-legend-item">
               <div class="dataset-legend-label">
                 <span class="dataset-dot" style="background: #88b7bf;"></span>
@@ -2338,7 +2338,7 @@
               </div>
               <strong>65 images</strong>
             </div>
-          
+
         </div>
         <div class="slideshow-tip">This split supports a clear academic workflow: model training on the largest portion, validation during tuning, and final testing on unseen data.</div>
       </section>
@@ -2369,7 +2369,7 @@
         <div class="dataset-count" id="dataset-visible-count">3 samples</div>
       </div>
       <div class="dataset-gallery" id="dataset-gallery">
-        
+
           <article class="dataset-sample" data-split="test" data-class="early_vegetative">
             <img loading="lazy" data-src="/tomato-growth-stage-classifier/dataset-image/test/early_vegetative/1709272861381.jpg" alt="Early Vegetative dataset sample">
             <div class="dataset-sample-info">
@@ -2377,7 +2377,7 @@
               <span>Test / 1709272861381.jpg</span>
             </div>
           </article>
-        
+
           <article class="dataset-sample" data-split="test" data-class="flowering_initiation">
             <img loading="lazy" data-src="/tomato-growth-stage-classifier/dataset-image/test/flowering_initiation/1710490230364.jpg" alt="Flowering Initiation dataset sample">
             <div class="dataset-sample-info">
@@ -2385,7 +2385,7 @@
               <span>Test / 1710490230364.jpg</span>
             </div>
           </article>
-        
+
           <article class="dataset-sample" data-split="test" data-class="flowering_initiation">
             <img loading="lazy" data-src="/tomato-growth-stage-classifier/dataset-image/test/flowering_initiation/1710594999059.jpg" alt="Flowering Initiation dataset sample">
             <div class="dataset-sample-info">
@@ -2393,7 +2393,7 @@
               <span>Test / 1710594999059.jpg</span>
             </div>
           </article>
-        
+
       </div>
       <div class="dataset-pagination">
         <button type="button" id="dataset-prev" onclick="changeDatasetPage(-1)">Previous</button>
@@ -2420,7 +2420,7 @@
             </tr>
           </thead>
           <tbody>
-            
+
               <tr>
                 <td><strong>CNN</strong></td>
                 <td>98.46%</td>
@@ -2429,7 +2429,7 @@
                 <td>0.983</td>
                 <td>1</td>
               </tr>
-            
+
               <tr>
                 <td><strong>Transformer</strong></td>
                 <td>76.92%</td>
@@ -2438,7 +2438,7 @@
                 <td>0.681</td>
                 <td>15</td>
               </tr>
-            
+
               <tr>
                 <td><strong>Hybrid CNN-Transformer</strong></td>
                 <td>100.00%</td>
@@ -2447,7 +2447,7 @@
                 <td>1.000</td>
                 <td>0</td>
               </tr>
-            
+
           </tbody>
         </table></div>
       </section>
@@ -2456,7 +2456,7 @@
         <h2>Visual Metric Comparison</h2>
         <p class="muted">This chart makes the performance gap easier to present during viva or seminar discussion. The hybrid model remains strongest across all main evaluation metrics.</p>
         <div class="chart-stack">
-          
+
             <div class="chart-row">
               <div class="chart-head">
                 <strong>CNN</strong>
@@ -2485,7 +2485,7 @@
                 </div>
               </div>
             </div>
-          
+
             <div class="chart-row">
               <div class="chart-head">
                 <strong>Transformer</strong>
@@ -2514,7 +2514,7 @@
                 </div>
               </div>
             </div>
-          
+
             <div class="chart-row">
               <div class="chart-head">
                 <strong>Hybrid CNN-Transformer</strong>
@@ -2543,12 +2543,12 @@
                 </div>
               </div>
             </div>
-          
+
         </div>
       </section>
     </div>
 
-    
+
       <section class="card reveal slide-section" data-page="results" data-slide-title="Multiple Run Results">
         <span class="eyebrow">Robustness Across Random Seeds</span>
         <h2>Multiple-Run Performance: Mean +/- Standard Deviation</h2>
@@ -2557,13 +2557,13 @@
           <table class="experiment-table">
             <thead><tr><th>Model</th><th>Runs</th><th>Accuracy</th><th>Precision</th><th>Recall</th><th>F1-score</th></tr></thead>
             <tbody>
-              
+
                 <tr><td><strong>CNN</strong></td><td>3</td><td>96.92% +/- 4.07</td><td>100.00% +/- 0.00</td><td>93.33% +/- 8.82</td><td>96.40% +/- 4.83</td></tr>
-              
+
                 <tr><td><strong>Transformer</strong></td><td>3</td><td>88.72% +/- 3.87</td><td>93.72% +/- 1.53</td><td>81.11% +/- 10.18</td><td>86.67% +/- 5.45</td></tr>
-              
+
                 <tr><td><strong>Hybrid CNN-Transformer</strong></td><td>3</td><td>96.41% +/- 1.78</td><td>96.97% +/- 5.25</td><td>95.56% +/- 5.09</td><td>96.09% +/- 1.93</td></tr>
-              
+
             </tbody>
           </table>
         </div>
@@ -2575,7 +2575,7 @@
         </div>
         <div class="slideshow-tip"><strong>Interpretation:</strong> CNN has the highest mean accuracy under the equal three-epoch protocol, while Hybrid CNN-Transformer has the lowest run-to-run accuracy variation. The original 100% hybrid score should therefore be reported as the best recorded single run, not as guaranteed general performance.</div>
       </section>
-    
+
 
     <div class="section-grid reveal slide-section" data-page="results" data-slide-title="Training History">
       <section class="card">
@@ -2583,19 +2583,19 @@
         <h2>Training History Line Charts</h2>
         <p class="muted">These line charts compare training and validation accuracy across epochs, helping explain learning stability and generalization behavior for each model.</p>
         <div class="history-grid">
-          
+
             <div class="history-card">
               <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NDAiIGhlaWdodD0iMzIwIiB2aWV3Qm94PSIwIDAgNjQwIDMyMCI+PHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSIzMjAiIHJ4PSIyNCIgZmlsbD0iI2ZmZmZmZiIvPjx0ZXh0IHg9IjI4IiB5PSIzNCIgZmlsbD0iIzEyMzg1ZCIgZm9udC1zaXplPSIyMiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXdlaWdodD0iNzAwIj5DTk48L3RleHQ+PHRleHQgeD0iMjgiIHk9IjU2IiBmaWxsPSIjNmI4Zjk2IiBmb250LXNpemU9IjEzIiBmb250LWZhbWlseT0iQXJpYWwiPlRyYWluaW5nIHZzIHZhbGlkYXRpb24gYWNjdXJhY3kgYnkgZXBvY2g8L3RleHQ+PGxpbmUgeDE9IjU4IiB5MT0iMjMyLjAwIiB4Mj0iNTc4IiB5Mj0iMjMyLjAwIiBzdHJva2U9IiNlMmVkZjIiIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjQ2IiB5PSIyMzYuMDAiIHRleHQtYW5jaG9yPSJlbmQiIGZpbGw9IiM2YjhmOTYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSJBcmlhbCI+MDwvdGV4dD48bGluZSB4MT0iNTgiIHkxPSIxODQuNTAiIHgyPSI1NzgiIHkyPSIxODQuNTAiIHN0cm9rZT0iI2UyZWRmMiIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNDYiIHk9IjE4OC41MCIgdGV4dC1hbmNob3I9ImVuZCIgZmlsbD0iIzZiOGY5NiIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IkFyaWFsIj4yNTwvdGV4dD48bGluZSB4MT0iNTgiIHkxPSIxMzcuMDAiIHgyPSI1NzgiIHkyPSIxMzcuMDAiIHN0cm9rZT0iI2UyZWRmMiIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNDYiIHk9IjE0MS4wMCIgdGV4dC1hbmNob3I9ImVuZCIgZmlsbD0iIzZiOGY5NiIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IkFyaWFsIj41MDwvdGV4dD48bGluZSB4MT0iNTgiIHkxPSI4OS41MCIgeDI9IjU3OCIgeTI9Ijg5LjUwIiBzdHJva2U9IiNlMmVkZjIiIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjQ2IiB5PSI5My41MCIgdGV4dC1hbmNob3I9ImVuZCIgZmlsbD0iIzZiOGY5NiIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IkFyaWFsIj43NTwvdGV4dD48bGluZSB4MT0iNTgiIHkxPSI0Mi4wMCIgeDI9IjU3OCIgeTI9IjQyLjAwIiBzdHJva2U9IiNlMmVkZjIiIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjQ2IiB5PSI0Ni4wMCIgdGV4dC1hbmNob3I9ImVuZCIgZmlsbD0iIzZiOGY5NiIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IkFyaWFsIj4xMDA8L3RleHQ+PGxpbmUgeDE9IjU4LjAwIiB5MT0iNDIiIHgyPSI1OC4wMCIgeTI9IjIzMiIgc3Ryb2tlPSIjZjFmNmY4IiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSI1OC4wMCIgeT0iMjU0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNmI4Zjk2IiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iQXJpYWwiPkUxPC90ZXh0PjxsaW5lIHgxPSIzMTguMDAiIHkxPSI0MiIgeDI9IjMxOC4wMCIgeTI9IjIzMiIgc3Ryb2tlPSIjZjFmNmY4IiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIzMTguMDAiIHk9IjI1NCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzZiOGY5NiIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IkFyaWFsIj5FMjwvdGV4dD48bGluZSB4MT0iNTc4LjAwIiB5MT0iNDIiIHgyPSI1NzguMDAiIHkyPSIyMzIiIHN0cm9rZT0iI2YxZjZmOCIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNTc4LjAwIiB5PSIyNTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM2YjhmOTYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSJBcmlhbCI+RTM8L3RleHQ+PHBhdGggZD0iTSA1OC4wMCA3Mi42NSBMIDMxOC4wMCA1Ny4zMiBMIDU3OC4wMCA1Ni4xMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMGY2Yzc4IiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0gNTguMDAgNDcuNjcgTCAzMTguMDAgNjEuODUgTCA1NzguMDAgNDcuNjciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Q5NmQzYSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48Y2lyY2xlIGN4PSI1OC4wMCIgY3k9IjcyLjY1IiByPSI1IiBmaWxsPSIjMGY2Yzc4Ii8+PGNpcmNsZSBjeD0iMzE4LjAwIiBjeT0iNTcuMzIiIHI9IjUiIGZpbGw9IiMwZjZjNzgiLz48Y2lyY2xlIGN4PSI1NzguMDAiIGN5PSI1Ni4xMCIgcj0iNSIgZmlsbD0iIzBmNmM3OCIvPjxjaXJjbGUgY3g9IjU4LjAwIiBjeT0iNDcuNjciIHI9IjUiIGZpbGw9IiNkOTZkM2EiLz48Y2lyY2xlIGN4PSIzMTguMDAiIGN5PSI2MS44NSIgcj0iNSIgZmlsbD0iI2Q5NmQzYSIvPjxjaXJjbGUgY3g9IjU3OC4wMCIgY3k9IjQ3LjY3IiByPSI1IiBmaWxsPSIjZDk2ZDNhIi8+PHJlY3QgeD0iMzkwIiB5PSIyNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0IiByeD0iNCIgZmlsbD0iIzBmNmM3OCIvPjx0ZXh0IHg9IjQxMiIgeT0iMzYiIGZpbGw9IiMxMjM4NWQiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtZmFtaWx5PSJBcmlhbCI+VHJhaW4gQWNjdXJhY3k8L3RleHQ+PHJlY3QgeD0iMzkwIiB5PSI0OCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0IiByeD0iNCIgZmlsbD0iI2Q5NmQzYSIvPjx0ZXh0IHg9IjQxMiIgeT0iNjAiIGZpbGw9IiMxMjM4NWQiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtZmFtaWx5PSJBcmlhbCI+VmFsaWRhdGlvbiBBY2N1cmFjeTwvdGV4dD48L3N2Zz4=" alt="CNN training history chart">
             </div>
-          
+
             <div class="history-card">
               <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NDAiIGhlaWdodD0iMzIwIiB2aWV3Qm94PSIwIDAgNjQwIDMyMCI+PHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSIzMjAiIHJ4PSIyNCIgZmlsbD0iI2ZmZmZmZiIvPjx0ZXh0IHg9IjI4IiB5PSIzNCIgZmlsbD0iIzEyMzg1ZCIgZm9udC1zaXplPSIyMiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXdlaWdodD0iNzAwIj5UcmFuc2Zvcm1lcjwvdGV4dD48dGV4dCB4PSIyOCIgeT0iNTYiIGZpbGw9IiM2YjhmOTYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtZmFtaWx5PSJBcmlhbCI+VHJhaW5pbmcgdnMgdmFsaWRhdGlvbiBhY2N1cmFjeSBieSBlcG9jaDwvdGV4dD48bGluZSB4MT0iNTgiIHkxPSIyMzIuMDAiIHgyPSI1NzgiIHkyPSIyMzIuMDAiIHN0cm9rZT0iI2UyZWRmMiIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNDYiIHk9IjIzNi4wMCIgdGV4dC1hbmNob3I9ImVuZCIgZmlsbD0iIzZiOGY5NiIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IkFyaWFsIj4wPC90ZXh0PjxsaW5lIHgxPSI1OCIgeTE9IjE4NC41MCIgeDI9IjU3OCIgeTI9IjE4NC41MCIgc3Ryb2tlPSIjZTJlZGYyIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSI0NiIgeT0iMTg4LjUwIiB0ZXh0LWFuY2hvcj0iZW5kIiBmaWxsPSIjNmI4Zjk2IiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iQXJpYWwiPjI1PC90ZXh0PjxsaW5lIHgxPSI1OCIgeTE9IjEzNy4wMCIgeDI9IjU3OCIgeTI9IjEzNy4wMCIgc3Ryb2tlPSIjZTJlZGYyIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSI0NiIgeT0iMTQxLjAwIiB0ZXh0LWFuY2hvcj0iZW5kIiBmaWxsPSIjNmI4Zjk2IiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iQXJpYWwiPjUwPC90ZXh0PjxsaW5lIHgxPSI1OCIgeTE9Ijg5LjUwIiB4Mj0iNTc4IiB5Mj0iODkuNTAiIHN0cm9rZT0iI2UyZWRmMiIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNDYiIHk9IjkzLjUwIiB0ZXh0LWFuY2hvcj0iZW5kIiBmaWxsPSIjNmI4Zjk2IiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iQXJpYWwiPjc1PC90ZXh0PjxsaW5lIHgxPSI1OCIgeTE9IjQyLjAwIiB4Mj0iNTc4IiB5Mj0iNDIuMDAiIHN0cm9rZT0iI2UyZWRmMiIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNDYiIHk9IjQ2LjAwIiB0ZXh0LWFuY2hvcj0iZW5kIiBmaWxsPSIjNmI4Zjk2IiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iQXJpYWwiPjEwMDwvdGV4dD48bGluZSB4MT0iNTguMDAiIHkxPSI0MiIgeDI9IjU4LjAwIiB5Mj0iMjMyIiBzdHJva2U9IiNmMWY2ZjgiIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjU4LjAwIiB5PSIyNTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM2YjhmOTYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSJBcmlhbCI+RTE8L3RleHQ+PGxpbmUgeDE9IjU3OC4wMCIgeTE9IjQyIiB4Mj0iNTc4LjAwIiB5Mj0iMjMyIiBzdHJva2U9IiNmMWY2ZjgiIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjU3OC4wMCIgeT0iMjU0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNmI4Zjk2IiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iQXJpYWwiPkUyPC90ZXh0PjxwYXRoIGQ9Ik0gNTguMDAgOTUuOTQgTCA1NzguMDAgODguNTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzBmNmM3OCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNIDU4LjAwIDkzLjA0IEwgNTc4LjAwIDk4LjcyIiBmaWxsPSJub25lIiBzdHJva2U9IiNkOTZkM2EiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PGNpcmNsZSBjeD0iNTguMDAiIGN5PSI5NS45NCIgcj0iNSIgZmlsbD0iIzBmNmM3OCIvPjxjaXJjbGUgY3g9IjU3OC4wMCIgY3k9Ijg4LjU4IiByPSI1IiBmaWxsPSIjMGY2Yzc4Ii8+PGNpcmNsZSBjeD0iNTguMDAiIGN5PSI5My4wNCIgcj0iNSIgZmlsbD0iI2Q5NmQzYSIvPjxjaXJjbGUgY3g9IjU3OC4wMCIgY3k9Ijk4LjcyIiByPSI1IiBmaWxsPSIjZDk2ZDNhIi8+PHJlY3QgeD0iMzkwIiB5PSIyNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0IiByeD0iNCIgZmlsbD0iIzBmNmM3OCIvPjx0ZXh0IHg9IjQxMiIgeT0iMzYiIGZpbGw9IiMxMjM4NWQiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtZmFtaWx5PSJBcmlhbCI+VHJhaW4gQWNjdXJhY3k8L3RleHQ+PHJlY3QgeD0iMzkwIiB5PSI0OCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0IiByeD0iNCIgZmlsbD0iI2Q5NmQzYSIvPjx0ZXh0IHg9IjQxMiIgeT0iNjAiIGZpbGw9IiMxMjM4NWQiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtZmFtaWx5PSJBcmlhbCI+VmFsaWRhdGlvbiBBY2N1cmFjeTwvdGV4dD48L3N2Zz4=" alt="Transformer training history chart">
             </div>
-          
+
             <div class="history-card">
               <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NDAiIGhlaWdodD0iMzIwIiB2aWV3Qm94PSIwIDAgNjQwIDMyMCI+PHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSIzMjAiIHJ4PSIyNCIgZmlsbD0iI2ZmZmZmZiIvPjx0ZXh0IHg9IjI4IiB5PSIzNCIgZmlsbD0iIzEyMzg1ZCIgZm9udC1zaXplPSIyMiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXdlaWdodD0iNzAwIj5IeWJyaWQgQ05OLVRyYW5zZm9ybWVyPC90ZXh0Pjx0ZXh0IHg9IjI4IiB5PSI1NiIgZmlsbD0iIzZiOGY5NiIgZm9udC1zaXplPSIxMyIgZm9udC1mYW1pbHk9IkFyaWFsIj5UcmFpbmluZyB2cyB2YWxpZGF0aW9uIGFjY3VyYWN5IGJ5IGVwb2NoPC90ZXh0PjxsaW5lIHgxPSI1OCIgeTE9IjIzMi4wMCIgeDI9IjU3OCIgeTI9IjIzMi4wMCIgc3Ryb2tlPSIjZTJlZGYyIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSI0NiIgeT0iMjM2LjAwIiB0ZXh0LWFuY2hvcj0iZW5kIiBmaWxsPSIjNmI4Zjk2IiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iQXJpYWwiPjA8L3RleHQ+PGxpbmUgeDE9IjU4IiB5MT0iMTg0LjUwIiB4Mj0iNTc4IiB5Mj0iMTg0LjUwIiBzdHJva2U9IiNlMmVkZjIiIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjQ2IiB5PSIxODguNTAiIHRleHQtYW5jaG9yPSJlbmQiIGZpbGw9IiM2YjhmOTYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSJBcmlhbCI+MjU8L3RleHQ+PGxpbmUgeDE9IjU4IiB5MT0iMTM3LjAwIiB4Mj0iNTc4IiB5Mj0iMTM3LjAwIiBzdHJva2U9IiNlMmVkZjIiIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjQ2IiB5PSIxNDEuMDAiIHRleHQtYW5jaG9yPSJlbmQiIGZpbGw9IiM2YjhmOTYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSJBcmlhbCI+NTA8L3RleHQ+PGxpbmUgeDE9IjU4IiB5MT0iODkuNTAiIHgyPSI1NzgiIHkyPSI4OS41MCIgc3Ryb2tlPSIjZTJlZGYyIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSI0NiIgeT0iOTMuNTAiIHRleHQtYW5jaG9yPSJlbmQiIGZpbGw9IiM2YjhmOTYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSJBcmlhbCI+NzU8L3RleHQ+PGxpbmUgeDE9IjU4IiB5MT0iNDIuMDAiIHgyPSI1NzgiIHkyPSI0Mi4wMCIgc3Ryb2tlPSIjZTJlZGYyIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSI0NiIgeT0iNDYuMDAiIHRleHQtYW5jaG9yPSJlbmQiIGZpbGw9IiM2YjhmOTYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSJBcmlhbCI+MTAwPC90ZXh0PjxsaW5lIHgxPSI1OC4wMCIgeTE9IjQyIiB4Mj0iNTguMDAiIHkyPSIyMzIiIHN0cm9rZT0iI2YxZjZmOCIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNTguMDAiIHk9IjI1NCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzZiOGY5NiIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IkFyaWFsIj5FMTwvdGV4dD48bGluZSB4MT0iMTg4LjAwIiB5MT0iNDIiIHgyPSIxODguMDAiIHkyPSIyMzIiIHN0cm9rZT0iI2YxZjZmOCIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iMTg4LjAwIiB5PSIyNTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM2YjhmOTYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSJBcmlhbCI+RTI8L3RleHQ+PGxpbmUgeDE9IjMxOC4wMCIgeTE9IjQyIiB4Mj0iMzE4LjAwIiB5Mj0iMjMyIiBzdHJva2U9IiNmMWY2ZjgiIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjMxOC4wMCIgeT0iMjU0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNmI4Zjk2IiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iQXJpYWwiPkUzPC90ZXh0PjxsaW5lIHgxPSI0NDguMDAiIHkxPSI0MiIgeDI9IjQ0OC4wMCIgeTI9IjIzMiIgc3Ryb2tlPSIjZjFmNmY4IiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSI0NDguMDAiIHk9IjI1NCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzZiOGY5NiIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IkFyaWFsIj5FNDwvdGV4dD48bGluZSB4MT0iNTc4LjAwIiB5MT0iNDIiIHgyPSI1NzguMDAiIHkyPSIyMzIiIHN0cm9rZT0iI2YxZjZmOCIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iNTc4LjAwIiB5PSIyNTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM2YjhmOTYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSJBcmlhbCI+RTU8L3RleHQ+PHBhdGggZD0iTSA1OC4wMCA4MS44NCBMIDE4OC4wMCA2Ni41MiBMIDMxOC4wMCA1OS4xNiBMIDQ0OC4wMCA1OC41NSBMIDU3OC4wMCA1Ni4xMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMGY2Yzc4IiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0gNTguMDAgNTMuMzQgTCAxODguMDAgNDcuNjcgTCAzMTguMDAgMTEyLjkwIEwgNDQ4LjAwIDUwLjUxIEwgNTc4LjAwIDQ0Ljg0IiBmaWxsPSJub25lIiBzdHJva2U9IiNkOTZkM2EiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PGNpcmNsZSBjeD0iNTguMDAiIGN5PSI4MS44NCIgcj0iNSIgZmlsbD0iIzBmNmM3OCIvPjxjaXJjbGUgY3g9IjE4OC4wMCIgY3k9IjY2LjUyIiByPSI1IiBmaWxsPSIjMGY2Yzc4Ii8+PGNpcmNsZSBjeD0iMzE4LjAwIiBjeT0iNTkuMTYiIHI9IjUiIGZpbGw9IiMwZjZjNzgiLz48Y2lyY2xlIGN4PSI0NDguMDAiIGN5PSI1OC41NSIgcj0iNSIgZmlsbD0iIzBmNmM3OCIvPjxjaXJjbGUgY3g9IjU3OC4wMCIgY3k9IjU2LjEwIiByPSI1IiBmaWxsPSIjMGY2Yzc4Ii8+PGNpcmNsZSBjeD0iNTguMDAiIGN5PSI1My4zNCIgcj0iNSIgZmlsbD0iI2Q5NmQzYSIvPjxjaXJjbGUgY3g9IjE4OC4wMCIgY3k9IjQ3LjY3IiByPSI1IiBmaWxsPSIjZDk2ZDNhIi8+PGNpcmNsZSBjeD0iMzE4LjAwIiBjeT0iMTEyLjkwIiByPSI1IiBmaWxsPSIjZDk2ZDNhIi8+PGNpcmNsZSBjeD0iNDQ4LjAwIiBjeT0iNTAuNTEiIHI9IjUiIGZpbGw9IiNkOTZkM2EiLz48Y2lyY2xlIGN4PSI1NzguMDAiIGN5PSI0NC44NCIgcj0iNSIgZmlsbD0iI2Q5NmQzYSIvPjxyZWN0IHg9IjM5MCIgeT0iMjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgcng9IjQiIGZpbGw9IiMwZjZjNzgiLz48dGV4dCB4PSI0MTIiIHk9IjM2IiBmaWxsPSIjMTIzODVkIiBmb250LXNpemU9IjEzIiBmb250LWZhbWlseT0iQXJpYWwiPlRyYWluIEFjY3VyYWN5PC90ZXh0PjxyZWN0IHg9IjM5MCIgeT0iNDgiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgcng9IjQiIGZpbGw9IiNkOTZkM2EiLz48dGV4dCB4PSI0MTIiIHk9IjYwIiBmaWxsPSIjMTIzODVkIiBmb250LXNpemU9IjEzIiBmb250LWZhbWlseT0iQXJpYWwiPlZhbGlkYXRpb24gQWNjdXJhY3k8L3RleHQ+PC9zdmc+" alt="Hybrid CNN-Transformer training history chart">
             </div>
-          
+
         </div>
       </section>
       <section class="card">
@@ -2616,10 +2616,10 @@
         <h2>Precision and Recall by Class</h2>
         <p class="muted">These bars show how each model behaves on both classes separately. They are especially useful when explaining why Flowering Initiation is harder for the Transformer baseline.</p>
         <div class="perclass-grid">
-          
+
             <div class="perclass-card">
               <h3>CNN</h3>
-              
+
                 <div class="perclass-item">
                   <strong>Early Vegetative</strong>
                   <div class="metric-bar-row">
@@ -2633,7 +2633,7 @@
                     <strong>100.00%</strong>
                   </div>
                 </div>
-              
+
                 <div class="perclass-item">
                   <strong>Flowering Initiation</strong>
                   <div class="metric-bar-row">
@@ -2647,12 +2647,12 @@
                     <strong>96.67%</strong>
                   </div>
                 </div>
-              
+
             </div>
-          
+
             <div class="perclass-card">
               <h3>Transformer</h3>
-              
+
                 <div class="perclass-item">
                   <strong>Early Vegetative</strong>
                   <div class="metric-bar-row">
@@ -2666,7 +2666,7 @@
                     <strong>97.14%</strong>
                   </div>
                 </div>
-              
+
                 <div class="perclass-item">
                   <strong>Flowering Initiation</strong>
                   <div class="metric-bar-row">
@@ -2680,12 +2680,12 @@
                     <strong>53.33%</strong>
                   </div>
                 </div>
-              
+
             </div>
-          
+
             <div class="perclass-card">
               <h3>Hybrid CNN-Transformer</h3>
-              
+
                 <div class="perclass-item">
                   <strong>Early Vegetative</strong>
                   <div class="metric-bar-row">
@@ -2699,7 +2699,7 @@
                     <strong>100.00%</strong>
                   </div>
                 </div>
-              
+
                 <div class="perclass-item">
                   <strong>Flowering Initiation</strong>
                   <div class="metric-bar-row">
@@ -2713,9 +2713,9 @@
                     <strong>100.00%</strong>
                   </div>
                 </div>
-              
+
             </div>
-          
+
         </div>
       </section>
       <section class="card">
@@ -2723,7 +2723,7 @@
         <h2>Misclassified Samples by Model</h2>
         <p class="muted">These samples help explain where a baseline struggles. The hybrid model currently shows no test-set errors, while the Transformer baseline makes the most mistakes.</p>
         <div class="mis-grid">
-          
+
         </div>
       </section>
     </div>
@@ -2733,23 +2733,23 @@
       <h2>Software, Hardware, and Training Controls</h2>
       <p class="muted">These recorded settings make the experimental environment transparent and support repeatable implementation.</p>
       <div class="details-grid">
-        
+
           <div class="detail-card"><span>Python</span><strong>3.13.4</strong><small>Runtime language version</small></div>
-        
+
           <div class="detail-card"><span>PyTorch</span><strong>2.12.1</strong><small>Deep-learning framework</small></div>
-        
+
           <div class="detail-card"><span>NumPy</span><strong>2.5.1</strong><small>Numerical processing library</small></div>
-        
+
           <div class="detail-card"><span>Device</span><strong>MPS</strong><small>Training and inference backend</small></div>
-        
+
           <div class="detail-card"><span>Random Seeds</span><strong>42, 123, 2026</strong><small>Used for repeated experiments</small></div>
-        
+
           <div class="detail-card"><span>Input Size</span><strong>224 x 224 RGB</strong><small>Model input resolution</small></div>
-        
+
           <div class="detail-card"><span>Normalization</span><strong>ImageNet statistics</strong><small>Mean and standard deviation</small></div>
-        
+
           <div class="detail-card"><span>Augmentation</span><strong>Flip + 10-degree rotation</strong><small>Training images only</small></div>
-        
+
       </div>
     </section>
 
@@ -2800,21 +2800,21 @@
             </div>
           </form>
           <div class="sample-buttons">
-            
+
               <form method="post" onsubmit="return false;">
                 <input type="hidden" name="sample_path" value="/Users/macbook/Documents/Tomato Ma AAA/demo_data/test/early_vegetative/1709272861381.jpg">
                 <button type="submit">Sample Early Vegetative</button>
               </form>
-            
+
               <form method="post" onsubmit="return false;">
                 <input type="hidden" name="sample_path" value="/Users/macbook/Documents/Tomato Ma AAA/demo_data/test/flowering_initiation/1710594999059.jpg">
                 <button type="submit">Sample Flowering Initiation</button>
               </form>
-            
+
           </div>
-          
-          
-          
+
+
+
         </section>
 
         <section class="card">
@@ -2833,9 +2833,9 @@
       <section class="card">
         <span class="eyebrow">Live Output</span>
         <h2>Prediction Result</h2>
-        
+
           <p class="muted">No prediction yet. Upload an image from the tomato dataset or use one of the sample buttons to test the model in your browser.</p>
-        
+
       </section>
     </div>
 
@@ -2843,9 +2843,9 @@
       <section class="card">
         <span class="eyebrow">Session Tracking</span>
         <h2>Prediction History</h2>
-        
+
           <p class="muted">Prediction history will appear here after you test images in the app.</p>
-        
+
       </section>
 
       <section class="card matrix-panel">
@@ -2861,56 +2861,56 @@
       <h2>Thesis References and Methodological Foundations</h2>
       <p class="muted">These primary studies support the CNN, Transformer, explainable AI, augmentation, and agricultural image-analysis components of the research.</p>
       <div class="reference-grid">
-        
+
           <article class="reference-card">
             <span>Vaswani et al. (2017) | NeurIPS</span>
             <h3>Attention Is All You Need</h3>
             <p>Introduced the Transformer architecture and self-attention mechanism.</p>
             <a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener noreferrer">Open publication</a>
           </article>
-        
+
           <article class="reference-card">
             <span>Dosovitskiy et al. (2020) | ICLR 2021</span>
             <h3>An Image Is Worth 16x16 Words: Transformers for Image Recognition at Scale</h3>
             <p>Established patch-based Transformer learning for image classification.</p>
             <a href="https://arxiv.org/abs/2010.11929" target="_blank" rel="noopener noreferrer">Open publication</a>
           </article>
-        
+
           <article class="reference-card">
             <span>He, Zhang, Ren, and Sun (2016) | CVPR</span>
             <h3>Deep Residual Learning for Image Recognition</h3>
             <p>A foundational CNN study demonstrating deep residual visual feature learning.</p>
             <a href="https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html" target="_blank" rel="noopener noreferrer">Open publication</a>
           </article>
-        
+
           <article class="reference-card">
             <span>Selvaraju et al. (2017) | ICCV</span>
             <h3>Grad-CAM: Visual Explanations From Deep Networks via Gradient-Based Localization</h3>
             <p>Supports visual interpretation of influential image regions in CNN predictions.</p>
             <a href="https://openaccess.thecvf.com/content_iccv_2017/html/Selvaraju_Grad-CAM_Visual_Explanations_ICCV_2017_paper.html" target="_blank" rel="noopener noreferrer">Open publication</a>
           </article>
-        
+
           <article class="reference-card">
             <span>Mohanty, Hughes, and Salathe (2016) | Frontiers in Plant Science</span>
             <h3>Using Deep Learning for Image-Based Plant Disease Detection</h3>
             <p>Demonstrated the practical value and limitations of deep learning on plant images.</p>
             <a href="https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2016.01419/full" target="_blank" rel="noopener noreferrer">Open publication</a>
           </article>
-        
+
           <article class="reference-card">
             <span>Lee et al. (2018) | PLOS ONE</span>
             <h3>An Automated, High-Throughput Plant Phenotyping System Using Machine Learning-Based Plant Segmentation and Image Analysis</h3>
             <p>Connects automated image analysis with plant growth and phenotyping workflows.</p>
             <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196615" target="_blank" rel="noopener noreferrer">Open publication</a>
           </article>
-        
+
           <article class="reference-card">
             <span>Shorten and Khoshgoftaar (2019) | Journal of Big Data</span>
             <h3>A Survey on Image Data Augmentation for Deep Learning</h3>
             <p>Provides the methodological basis for augmentation in limited image datasets.</p>
             <a href="https://journalofbigdata.springeropen.com/articles/10.1186/s40537-019-0197-0" target="_blank" rel="noopener noreferrer">Open publication</a>
           </article>
-        
+
       </div>
     </section>
 

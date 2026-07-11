@@ -54,6 +54,7 @@ def export_pages() -> None:
                 raise RuntimeError(f"Could not export {route}: HTTP {response.status_code}")
             destination.parent.mkdir(parents=True, exist_ok=True)
             html = add_static_notice(response.get_data(as_text=True), route)
+            html = "\n".join(line.rstrip() for line in html.splitlines()) + "\n"
             destination.write_text(html, encoding="utf-8")
 
     shutil.copytree(PROJECT_ROOT / "demo_data", OUTPUT_ROOT / "dataset-image")
